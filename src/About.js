@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import web from "../src/images/mm2.jpg";
 import { NavLink } from 'react-router-dom';
 import Common from "./Common";
 
@@ -13,6 +12,7 @@ import Common from "./Common";
        const response =await fetch(url);
        //response 
        const resJson = await response.json();
+       console.log (resJson);
        setCity (resJson.main);
      }
      fetchApi();
@@ -25,6 +25,7 @@ import Common from "./Common";
      <>
      <div className = "text-center"center>
      <h1>Real-time Weather </h1>
+     
      </div>
      <div className = "box">
        <div className = "inputData">
@@ -52,6 +53,7 @@ import Common from "./Common";
       
       
      </div>
+    
      </>
    );
  };
