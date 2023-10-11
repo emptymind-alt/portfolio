@@ -1,20 +1,21 @@
 import React from 'react'
-import web from "../src/images/mm5.jpg";
+import web from "../src/images/cool.jpg";
 import { NavLink } from 'react-router-dom';
 import Common from "./Common";
-import Clock from "./Clock";
 
 
  const Home = ()=> {
    return (
      <>
+     <div className="google">
      <Common 
-     name = "welcome to portfolio"
+  
+     name = ""
      imgsrc = {web}
-     visit = "./contact"
+     visit = "./"
      btname = "Contact Now"
       />
-      <Clock/>
+      </div>
      
      </>
    );

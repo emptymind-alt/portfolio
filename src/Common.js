@@ -1,26 +1,20 @@
-import React from 'react'
+import React from 'react';
 import web from "../src/images/mm5.jpg";
 import { NavLink } from 'react-router-dom';
+import './main.css';
 
  const Common = (props)=> {
    return (
      <>
      <section id ="header" className= "d-flex align-items-center">
-     <div className = "container-fluid nav_bg">
+     <div className = "container-fluid ">
             <div className = "row">
-                 <div className = "col-10 mx-auto">
-                   <div className = "row">
-                   <div className = "col">
-                     </div>
-                     <div className = "col">
-                     </div>
-                     <div className = "col">
-                     </div>
-                     
-                   <div className = "col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                     <h2>{props.name}<strong className = "brand-name">  Manas</strong></h2>
-                     <h3 className = "my-3">
-                       Awesome developer</h3>
+                 
+                   
+               <div className = "col-md-5 pt-5 pt-lg-0 order-2 order-lg-1   flex-column justify-content-left">
+                     <h1>{props.name}<strong className = "brand-name justify-content-left">  Manas Sahoo</strong></h1>
+                     <span className = "goldy">
+                       Senior Developer</span>
                        <div className = "mt-3">
                          <NavLink to = {props.visit} className = "btn-get-started">Get started</NavLink>
                          </div>
@@ -28,14 +22,13 @@ import { NavLink } from 'react-router-dom';
                          
                    </div>
                    
-                   <div className = "col-lg-5 order-2 order-lg-2 header-img">
-                     <img src = {props.imgsrc} className="circle" alt="Cinque Terre" width="304" height="236"/>
+                   <div className = "col-4  col-lg-3 order-3 order-lg-2 header-img ">
+                     <img src = {props.imgsrc} className="circle" alt="Cinque Terre" max-width="150" height="180"/>
                     
                      </div>
                      </div>
                   </div>
-                 </div>
-                 </div>
+                
               
                  
        </section>

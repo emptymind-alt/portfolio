@@ -1,14 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
-* {
-  /* background-color: blue;*/
-  margin: 0;
-  padding: 0;
-  font-family: 'Mulish', sans-serif;
+
+.super{
+  margin: none;
+  padding: 0px;
+  background-color: #428857;
+}
+.google{
+  padding: 190px;
 }
 
+
 .circle {
+ margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 80%;
+  height: 60%;
 }
 
 .text-center {
@@ -25,51 +34,87 @@
 .header {
   background-color: #1a74be;
 }
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+#navbarSupportedContent{
+  background-color: #6a8842;
 }
 
-TextareaAutosize {
-  margin-left: 200px;
-}
 
-.box {
-  background-color: #838842;
-  border: 3px solid #3c9443;
-  margin-top: 100px;
-  margin-right: 300px;
-  margin-left: 200px;
-  padding: 30px;
-  padding-right: 20px;
-}
+
+
 
 .card-container {
+  margin: 5px;
   border: 1px solid black;
   padding: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: space-around;
+  max-width: 98%;
+  max-height: 89%;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgb(108, 221, 104);
+  position: relative;
+  background-image: cover;
+  
+}
+.card{
+ margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 10px;
+   max-width: 80%;
+  max-height: 7%;
+  border: 1px solid rgb(255, 60, 0);
+  padding: 5px;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position:absolute;
+  background-color: rgb(21, 255, 0);
+  background-image: cover;
+
+
+  
+
 }
 
 .card-body:hover {
-  background-color: #26b89f;
+  background-color: rgb(50, 184, 38);
+}
+.Anda{
+ display:inline-flex;
+  padding: 5px;
+  position: relative;
+  max-width: 320px;
+  max-height:200px ;
+  border-radius: 100%;
+  background-image: cover;
 }
 
 .card-body p {
-  -webkit-text-decoration-color: crimson;
-          text-decoration-color: crimson;
+  text-decoration-color: crimson;
+}
+.card-title{
+  margin: 10px;
+  text-align: center;
+  text-decoration: dotted;
+  
+}
+/* side bar */
+.menu1 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.jamuna{
+  text-transform: lowercase;
+}
+.sona{
+  text-transform: uppercase;
+ padding: 200px;
 }
 
 /*card enddddd*/
 .navbar navbar-expand-lg navbar-light bg-light {
-  background-color: darkcyan;
+  background-color: rgb(0, 139, 0);
 }
 
 .navbar a {
@@ -79,11 +124,11 @@ TextareaAutosize {
 
 .menu_active {
   font-weight: bold;
-  border-bottom: 1px solid #ff1e00;
+  border-bottom: 1px solid rgb(255, 30, 0);
 }
 
 .navbar a:hover {
-  color: #0f9c4a;
+  color: rgb(15, 156, 74);
 }
 
 @media (max-width: 991px) {
@@ -95,7 +140,6 @@ TextareaAutosize {
     border-bottom: none;
   }
 }
-
 #header .btn-get-started {
   font-weight: 500;
   font-size: 16px;
@@ -103,9 +147,8 @@ TextareaAutosize {
   display: inline-block;
   padding: 10px 30px;
   border-radius: 50px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #0f9c4a;
+  color: rgb(15, 156, 74);
   border: 2px solid chocolate;
   text-decoration: none;
 }
@@ -116,205 +159,148 @@ TextareaAutosize {
 
 .header-img {
   text-align: right;
+  border-radius: 50%;
 }
 
 #header .animated {
   animation: up-down 2s ease-in-out infinte alternate-reverse both;
 }
-
-@-webkit-keyframes up-down {
-  0% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-}
-
 .nav-link:hover {
   background-color: rgba(4, 37, 43, 0.377);
 }
 
 .tab-center {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
-.container-fluid nav_bg {
-  background-color: cadetblue;
+
+
+.foot {
+  background-color: rgb(11, 135, 184);
+  border: 1px solid black;
+ 
+
+
 }
 
-footer {
-  background-color: #0b87b8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.foot p{
+  text-align: center;
+}
+.honest{
+  padding: 200px;
+}
+.maxima{
+  padding: 400px;
+}
+.Asia{
+  padding:200px;
+}
+/* hooooooooooooooo*/
+
+.app{
+  background-color: #6eb957;
+}
+.login{
+  background-color: #428857;
+}
+input:not([type=radio]) {
+  width: 60%;
+  height: 30px;
+  padding: 0 5px;
 }
 
-body.light {
-  background: #d1dae3;
-}
-
-.clock {
-  margin-left: 400px;
-  width: 375px;
-  height: 375px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: url(./clock.png);
-  background-size: cover;
-  border: 4px;
-  /* box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5); */
-  -webkit-box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06), inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06), 0em 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
-          box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06), inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06), 0em 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-}
-
-body.light .clock {
-  -webkit-box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.3), inset 1em 1em -1em rgba(255, 255, 255, 0.3), 0em -1.2em -1.2em rgba(0, 0, 0, 0.5), inset 1em -1em 1em rgba(0, 0, 0, 0.1);
-          box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.3), inset 1em 1em -1em rgba(255, 255, 255, 0.3), 0em -1.2em -1.2em rgba(0, 0, 0, 0.5), inset 1em -1em 1em rgba(0, 0, 0, 0.1);
-}
-
-.clock :hover {
-  /* yet to be completed; when hovered, diplay complete information about time, `new Date().toLocaleString();` */
+.radio label, input[type=radio] {
   cursor: pointer;
 }
 
-/* The small circle int the center */
-.clock:before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: white;
-  border-radius: 50%;
-  /* The z-index property specifies the stack order of an element.
-  /* An element with greater stack order is always in front of an element with a lower stack order.  */
-  /* Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky). */
-  z-index: 10000;
-  /* kept as a high value, since wanted at top */
+label .mandatory{
+  color: red;
+  font-size: unset;
 }
 
-body.light .clock:before {
-  background: #1a74be;
+.mandatory{
+  color: red;
+  font-size: 13px;
 }
 
-.clock .hour,
-.clock .min,
-.clock .sec {
-  position: absolute;
+textarea{
+  padding: 2px 5px;
+  resize: none;
 }
 
-/* length of respective arms; */
-.clock .hour, .hr {
-  width: 160px;
-  height: 160px;
+button {
+  width: 70px;
+  height: 30px;
+  padding: 0 5px;
 }
 
-.clock .min, .mn {
-  width: 190px;
-  height: 190px;
+.card1 {
+  margin: auto;
+  padding: 100px;
+  border: 2px solid black;
+  display: table;
+  box-shadow: 0 0 2px 0 #53b635;
+  position: relative;
+ 
+}
+#label{
+  margin: 10px;
+}
+.space{
+  margin: 10px;
+
 }
 
-.clock .sec, .sc {
-  width: 230px;
-  height: 230px;
+.sundar{
+  width:400px;
 }
 
-.hr, .mn, .sc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* align-items: center; */
-  position: absolute;
-  border-radius: 50%;
+.card1 .form1 {
+  width: 370px;
+  padding: 30px 40px;
 }
 
-.hr:before {
-  content: '';
-  position: absolute;
-  width: 7.5px;
-  height: 80px;
-  background: #f81460;
-  z-index: 10;
-  /* z-index least */
-  border-radius: 2.8px;
+
+
+
+
+
+.card1.title p {
+  font-weight: bold;
+  font-size: 24px;
 }
 
-.mn:before {
-  content: '';
-  position: absolute;
-  width: 3.5px;
-  height: 100px;
-  background: #920954;
-  z-index: 11;
-  /* z-index more than hour hand */
-  border-radius: 3px;
-}
-
-body.light .mn:before {
-  background: #24b600;
-}
-
-.sc:before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 150px;
-  background: #0075fa80;
-  z-index: 12;
-  /* z-index more than hour minute hand */
-  border-radius: 3px;
-}
-
-.Clock {
-  position: absolute;
-  top: 35px;
-  right: 150px;
-  width: 20px;
-  margin: 2px;
-  height: 20px;
-  font-size: 18px;
-  border-radius: 50%;
-  background: #d1dae3;
-  color: #d1dae3;
-  font-family: 'Quicksand', sans-serif;
+.card1 .account {
+  color: blue;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.Clock:before {
-  position: absolute;
-  content: 'Light Mode';
-  white-space: nowrap;
-  left: 25px;
+.eventPage {
+  width: 70%;
+  margin: auto;
 }
 
-body.light .Clock {
-  background: #091921;
-  color: #091921;
-  content: 'Dark Mode';
+.table {
+  width: 100%;
+  background-color: #53b635;
 }
 
-body.light .Clock:before {
-  content: 'Dark Mode';
-  white-space: nowrap;
+.table button{
+  padding: 2px;
+  width: 50px;
+  height: unset;
 }
-/*# sourceMappingURL=main.css.map */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px 5px;
+}
+
+th {
+  text-align: left;
+}
+

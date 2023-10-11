@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom';
 import Common from "./Common";
+import './main.css';
 
 
- const About = ()=> {
+ const Activities = ()=> {
    const [city, setCity] = useState("null");
    const [search, setSearch] = useState("kolkata");
    useEffect(() => {
@@ -23,7 +24,8 @@ import Common from "./Common";
 
    return ( 
      <>
-     <div className = "text-center"center>
+     <div className="honest">
+     <div className = "text-center">
      <h1>Real-time Weather </h1>
      
      </div>
@@ -53,9 +55,10 @@ import Common from "./Common";
       
       
      </div>
+     </div>
     
      </>
    );
  };
 
-export default About;
+export default Activities;

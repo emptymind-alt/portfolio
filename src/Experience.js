@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
 
- const Contact = ()=> {
+ const Experience = ()=> {
    const [data, setData] = useState({
      fullname: "",
      email: "",
@@ -27,7 +27,7 @@ import React,{ useState } from 'react'
       return (
      <>
      <div className = "my-5">
-       <h1 className = "text-center"> contact me</h1>
+       <h1 className = "text-center"> CONTACT ME</h1>
        </div>
     <div className = "container-contact_div">
             <div className = "row">
@@ -35,7 +35,7 @@ import React,{ useState } from 'react'
                   
                    <form onSubmit = {formSubmit}>
                      <div className = "mb-3">
-                     <label className = "form-label" >Enter name</label>
+                     <label className = "form-label" >Enter Name</label>
      <input className="form-control" type="text"
      id ="exampleFormControlInput1"
      name = "fullname"
@@ -82,4 +82,4 @@ onChange = {InputEvent}
    );
  };
 
-export default Contact;
+export default Experience;
